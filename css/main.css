@@ -100,7 +100,11 @@ Secondary Color (Dark Green): #03261C;
   margin-left:2%;
 }
 
-
+.column-trio {
+  flex-direction:row;
+  width: 33.33%;
+  text-align: center;
+}
 
 .responsive {
   width: 50%;
@@ -122,10 +126,6 @@ Secondary Color (Dark Green): #03261C;
   width: 50%;
 }
 
-.column-trio {
-  flex-direction:row;
-  width: 33.33%;
-}
 
 .h2 {
   text-align:center;
