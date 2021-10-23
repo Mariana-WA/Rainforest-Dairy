@@ -1,21 +1,19 @@
 <html lang="en" dir="ltr">
-<head>
-<meta charset="utf-8">
-<title> Rainforest Dairy </title>
-<link rel="stylesheet" href="main.css">
+<head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title> Rainforest Dairy </title> <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+<link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin> <link href="[fonts.googleapis.com](https://fonts.googleapis.com)/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 <header>
 <! --- here comes my logo and navigation--->
-<div>
-  <img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo" >
-
+<div class="main-container">
+    <a href="index.html"><img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo" class="logo"></a>
   <nav>
     <ul>
-    <li><a href="index.html">Products</a></li>
+    <li><a href="index.html">Product</a></li>
     <li><a href="location.html">Location</a></li>
     <li><a href="about.html">About us</a></li>
+    <li style="float:right"><a href="about.html">Contact</a></li>
     </ul>
   </nav>
 
@@ -23,6 +21,8 @@
 </div>
 </header>
 <! --- here comes my content--->
+
+
 
   <! --- I want a hero image with a text layover--->
   <div class="hero-image">
@@ -35,14 +35,15 @@ Our cows enjoy a cruelty-free live in the rainforest mountains. </p>
     </div>
   </div>
 
+<main class="main.container">
 &nbsp;
 &nbsp;
   <! --- I want a 2 colums stucture that are full page,
   one with text and the other with an image--->
   <div class="row">
-    <div class="column">
-<h3> Raw nature. <br>
-Natural products. </h3>
+    <div class="column-l">
+<h2> Raw nature. <br>
+Natural products. </h2>
   <p> Our base dairy products are yogurt, cheese and butter made by three passionate
     farmer-brothers that actually come from very different backgrounds but choose this
     route out of the love to nature, animals and of course dairy products. </p>
@@ -50,26 +51,30 @@ Natural products. </h3>
   I want the SUBJECT of the email to be related to the button--->
   <button>Order now</button>
     </div>
-    <div class="column"></div>
-    <img src="img/images/Hands_S2_405x380.jpg" alt="Working hands" class="img">
+    <div class="column-r"></div>
+      <picture>
+        <img src="img/images/Hands_S2_405x380.jpg" alt="Working hands" class="img">
+          </picture>
   </div>
 
 &nbsp;
 &nbsp;
 <div>
 <h2 class="h2"> What’s in our dairy?</h2>
-<img src="img/images/Dairy_S3_455x320.jpg" alt="Dairy" class="img">
+  <picture>
+    <img src="img/images/Dairy_S3_910x640.png" alt="Dairy" class="img">
+      </picture>
 <hr>
 <div class="row">
-  <div class="column">
-    <p> FACT #1
-Some little text here </p>  </div>
-<div class="column">
-  <p> FACT #2
-Some little text here </p>  </div>
-<div class="column">
-  <p> FACT #3
-Some little text here </p>  </div>
+  <div class="column-trio">
+    <h3> FACT #1
+Some little text here </h3>  </div>
+<div class="column-trio">
+  <h3> FACT #2
+Some little text here </h3>  </div>
+<div class="column-trio">
+  <h3> FACT #3
+Some little text here </h3>  </div>
   </div>
   <hr>
     </div>
@@ -84,36 +89,39 @@ Some little text here </p>  </div>
 
   <! --- Will keep the 2 column structure, but for this, no full page.--->
   <div class="row">
-    <div class="column">
-<h3> Yogurt </h3>
+    <div class="column-l">
+<h2> Yogurt </h2>
   <p> The health benefits of yogurt are known, it’s a great source of Vitamin D,
     calcium and protein - and it is also delicious! Don’t settle for runny and
     plain yogurt, when you can get organic whole and satisfying products ideal
     for a healthy lifestyle or a snack.</p>
   <button>YO quiero YOgurt</button>
     </div>
-    <div class="column"></div>
-    <img src="img/images/Yogurt_S4_340x370.jpg" alt="Yogurt" class="img">
+    <div class="column-r"></div>
+      <picture><img src="img/images/Yogurt_S4_340x370.jpg" alt="Yogurt" class="img">
+          </picture>
   </div>
 &nbsp;
 &nbsp;
   <div class="row">
-    <div class="column">
-    <img src="img/images/Cheese_S4_340x370.jpg" alt="Cheese" class="img">
+    <div class="column-l">
+      <picture>
+        <img src="img/images/Cheese_S4_340x370.jpg" alt="Cheese" class="img">
+          </picture>
     </div>
-    <div class="column">
-    <h3> Cheese</h3>
+    <div class="column-r">
+    <h2> Cheese</h2>
       <p> We have mastered the making of cheese in the last 5 years, we can
         proudly say that our cheeses have the perfect melting point for pizza,
         the ideal consistency for cheeseboard and are the highlight of every
         typical breakfast.</p>
       <button>Say cheese</button></div>
   </div>
-
+</main>
 
 &nbsp;
-<footer>
-<div class="BGSection">
+<footer class="BGSection">
+<div>
 <p> Let’s get in touch! </p>
 <button>Contact</button>
 

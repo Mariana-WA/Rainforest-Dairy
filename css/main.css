@@ -1,32 +1,47 @@
 
 
 body, html {
-    height: 100%;
+    width: 100%;
     background-color: #ffffff;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
     color: #03261C;
+    scroll-behavior: smooth;
 }
 
 header {
   background-color: #f2f2f2;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 20px;
-  padding-left: 5px;
+  max-width: 100%;
+
 }
 
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 600;
+  font: #03261C
   color: #f2f2f2;
 }
 
-.container {
-  padding: 0 16px 0 16px;
+main {
+  max-width: 1200px;
+  margin:auto;
+}
+
+li {
+  display: inline;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin:auto;
+}
+
+@media only screen and (min-width: 1024px)
+
+{
 }
 
 .logo {
@@ -39,14 +54,16 @@ Primary Color (Bright green): #D9D974;
 Secondary Color (Dark Green): #03261C;
 */
 
+.img {
+  max-width: 100%;
+  display:block;
+  margin:auto;
+}
+
 /* The hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/images/CowLandscape_S1_1920x916.png");
-
-  /* Set a specific height */
-  height: 60%;
-
-  /* Position and center the image to scale nicely on all screens */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/images/CowLandscape_S1_1920x916.png");
+  height: 80%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,17 +80,27 @@ Secondary Color (Dark Green): #03261C;
   color: white;
 }
 
-.column {
-  float: left;
-  width: 50%;
+.row{
+  margin: 80px 0 80px 0;
+  content: "";
+  display: flex;
+  clear: both;
+  width: 100%;
 }
 
-.row{
-  margin: 25px 0;
-  content: "";
-  display: table;
-  clear: both;
+.column-l {
+  flex-direction: row;
+  width: 45%;
+  margin-right:2%;
 }
+
+.column-r {
+  flex-direction: row;
+  width: 45%;
+  margin-left:2%;
+}
+
+
 
 .responsive {
   width: 50%;
@@ -95,20 +122,15 @@ Secondary Color (Dark Green): #03261C;
   width: 50%;
 }
 
-.column {
-  float: left;
+.column-trio {
+  flex-direction:row;
   width: 33.33%;
 }
 
 .h2 {
   text-align:center;
-  font-weight: 500;
-}
-
-.img {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
+  font-weight: 700;
+  font-size: 32px;
 }
 
 .italic {
