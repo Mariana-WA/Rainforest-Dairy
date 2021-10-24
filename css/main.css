@@ -172,7 +172,7 @@ Secondary Color (Dark Green): #03261C;
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #C6D974;
+  background-color: rgb(3,38,28);
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -292,6 +292,12 @@ a {
 
 
 /*SVG animation: hand made*/
+svg{
+  max-width: 50%;
+  display:block;
+  margin:0 auto;
+}
+
 .line-center{
   animation-name: line-grow;
   animation-duration: 2s;
@@ -322,11 +328,30 @@ a {
 
 }
 
+.heart {
+  animation-name: line-grow;
+  animation-duration: 2s;
+  animation-iteration-count : infinite;
+  max-width: 50%;
+  display:block;
+  margin:0 auto;
+
+}
+
+.leaf {
+  animation-name: line-grow;
+  animation-duration: 2s;
+  animation-iteration-count : infinite;
+  max-width: 50%;
+  display:block;
+  margin:0 auto;
+
+}
 
 @keyframes line-grow{
 
   0%   { transform: translate(0, 0); }
-50%  { transform: translate(0, -8px); }
+  50%  { transform: translate(0, -8px); }
   100%  { transform: translate(0, 0); }
   }
 
