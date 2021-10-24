@@ -291,10 +291,10 @@ a {
 }
 
 
-/*SVG animation*/
+/*SVG animation: hand made*/
 .line-center{
   animation-name: line-grow;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-iteration-count : infinite;
   max-width: 50%;
   display:block;
@@ -302,10 +302,31 @@ a {
 
 }
 
+.line-left {
+  animation-name: line-grow;
+  animation-duration: 2s;
+  animation-iteration-count : infinite;
+  max-width: 50%;
+  display:block;
+  margin:0 auto;
+
+}
+
+.line-right {
+  animation-name: line-grow;
+  animation-duration: 2s;
+  animation-iteration-count : infinite;
+  max-width: 50%;
+  display:block;
+  margin:0 auto;
+
+}
+
+
 @keyframes line-grow{
 
   0%   { transform: translate(0, 0); }
-50%  { transform: translate(0, -200px); }
+50%  { transform: translate(0, -8px); }
   100%  { transform: translate(0, 0); }
   }
 
