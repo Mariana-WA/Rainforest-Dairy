@@ -45,6 +45,12 @@ h2 {
   font-size: 32px;
 }
 
+h3 {
+  text-align:center;
+  font-weight: 500;
+  font-size: 28px;
+}
+
 h4 {
     font-size: 18px;
     padding-bottom: 50px;
@@ -137,13 +143,19 @@ Secondary Color (Dark Green): #03261C;
   padding-right: 60px;
   padding-bottom: 50px;
   padding-left: 60px;
+  height: 200px;
+  position: relative;
 }
 
 .center {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
 }
 
 
@@ -201,14 +213,56 @@ Secondary Color (Dark Green): #03261C;
   text-decoration: none;
   font-size: 18px;
   padding: 20px;
-  width: 160px;
+  width: 200px;
   transition-duration: 0.2s;
   transition-property: opacity;
   margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
 
 .button:hover {
   opacity: 0.8;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button-2 {
+  display: inline-block;
+  background-color: #D9D974;
+  border: none;
+  color: #03261C;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px;
+  width: 200px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
 
 
@@ -290,9 +344,10 @@ nav {
 
 h2 {
   text-align:unset;}
-
-
 }
+
+h3 {
+text-align:unset;}
 
 @media only screen and (min-width: 1440px) {
 
@@ -328,8 +383,13 @@ h2 {
   }
 
   h2 {
-    text-align:unset;}
+    text-align:center;}
 }
+
+h3 {
+  text-align:unset;}
+}
+
 /*
 a {
   color: #FFFFE3;
