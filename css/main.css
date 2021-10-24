@@ -290,6 +290,26 @@ a {
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
+
+/*SVG animation*/
+.line-center{
+  animation-name: line-grow;
+  animation-duration: 1.5s;
+  animation-iteration-count : infinite;
+  max-width: 50%;
+  display:block;
+  margin:0 auto;
+
+}
+
+@keyframes line-grow{
+
+  0%   {transform: scale(.8);}
+  100% {transform: scale(1.5);}
+
+  }
+
+
 @media only screen and (min-width: 640px) {
 
 header {
@@ -389,6 +409,11 @@ text-align:unset;}
 h3 {
   text-align:unset;}
 }
+
+
+
+
+
 
 /*
 a {
