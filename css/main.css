@@ -9,11 +9,16 @@ body, html {
     line-height: 1.8;
     color: #03261C;
     scroll-behavior: smooth;
+    display: block;
 }
 
 header {
   background-color: #f2f2f2;
   max-width: 100%;
+  position:fixed;
+  top:0;
+  width: 100%;
+  z-index: 2;
 
 }
 
@@ -34,14 +39,28 @@ li {
   display: inline;
 }
 
-.main-container {
-  max-width: 1200px;
+h2 {
+  text-align:center;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+h4 {
+    font-size: 18px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+div {
   margin:auto;
 }
 
-@media only screen and (min-width: 1024px)
 
-{
+.main-container {
+  max-width: 1200px;
+  margin:auto;
 }
 
 .logo {
@@ -57,7 +76,7 @@ Secondary Color (Dark Green): #03261C;
 .img {
   max-width: 100%;
   display:block;
-  margin:auto;
+  margin:0 auto;
 }
 
 /* The hero image */
@@ -89,20 +108,21 @@ Secondary Color (Dark Green): #03261C;
 }
 
 .column-l {
-  flex-direction: row;
-  width: 45%;
-  margin-right:2%;
+  flex-direction: column;
+  width: 44%;
+  margin-right:3%;
 }
 
 .column-r {
-  flex-direction: row;
-  width: 45%;
-  margin-left:2%;
+  flex-direction: column;
+  width: 44%;
+  margin-left:3%;
 }
 
 .column-trio {
-  flex-direction:row;
-  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   text-align: center;
 }
 
@@ -127,21 +147,12 @@ Secondary Color (Dark Green): #03261C;
 }
 
 
-.h2 {
-  text-align:center;
-  font-weight: 700;
-  font-size: 32px;
-}
-
-.italic {
-    font-size: 16px;
-    padding-bottom: 50px;
-    padding-left: 100px;
-    font-weight: italic;
-}
-
 .div-bg {
   background-color: #D9D974;
+  display: block;
+  max-width: 1200px;
+  margin:80px auto;
+  padding: 40px
   }
 
 
@@ -149,7 +160,7 @@ Secondary Color (Dark Green): #03261C;
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: #C6D974;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -183,14 +194,14 @@ Secondary Color (Dark Green): #03261C;
 
 .button {
   display: inline-block;
-  border-radius: 4px;
   background-color: #03261C;
   border: none;
   color: #FFFFFF;
   text-align: center;
+  text-decoration: none;
   font-size: 18px;
   padding: 20px;
-  width: 200px;
+  width: 160px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -201,6 +212,7 @@ Secondary Color (Dark Green): #03261C;
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  background-color: #043628;
 }
 
 .button span:after {
@@ -214,19 +226,147 @@ Secondary Color (Dark Green): #03261C;
 
 .button:hover span {
   padding-right: 25px;
+  opacity: 0.8;
 }
 
 .button:hover span:after {
   opacity: 1;
-  right: 0;
 }
 
-a {
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+    row-gap: 1em;
+}
+
+.wrapper-2, .wrapper-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+    row-gap: 1em;
+}
+
+a{
   color: #6D9355;
   text-decoration: none;
 }
 
-a:hover {
+a {
   color: #D9D974;
   text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+@media only screen and (min-width: 640px) {
+
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1024px)
+
+{
+
+.main-container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding:0;
+}
+.column-l {
+    flex-direction: row;
+}
+
+.column-r {
+  flex-direction: row;
+}
+
+.column-trio {
+  flex-direction: row;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    column-gap: 10px;
+    row-gap: 1em;
+}
+
+.wrapper-2, .wrapper-3 {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    column-gap: 0px;
+    row-gap: 1em;
+}
+
+h2 {
+  text-align:unset;}
+
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .main-container{
+      margin: 0 auto;
+      max-width: 1200px;
+      padding:0;
+  }
+  .column-l {
+      flex-direction: row;
+  }
+
+  .column-r {
+    flex-direction: row;
+  }
+
+  .column-trio {
+    flex-direction: row;
+  }
+
+  .wrapper {
+      display: grid;
+      grid-template-columns: repeat (3, 1fr);
+      column-gap: 20px;
+      row-gap: 2em;
+  }
+
+  .wrapper-2, .wrapper-3 {
+      display: grid;
+      grid-template-columns: repeat (2, 1fr);
+      column-gap: 0px;
+      row-gap: 2em;
+  }
+
+  h2 {
+    text-align:unset;}
+}
+/*
+a {
+  color: #FFFFE3;
+  text-decoration: none;
+}
+
+a:hover a:active {
+  color: #D9D974;
+}
+
+a:link, a:visited {
+  background-color: #B6D974;
+  color: #ffffff;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
