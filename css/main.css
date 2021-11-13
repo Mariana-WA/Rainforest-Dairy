@@ -91,28 +91,40 @@ Secondary Color (Dark Green): #03261C;
   background-color: #F7F7F7;
 }
 
-.topnav a {
-  float: left;
+.topnav nav a:not(:last-child) {display: none;}
+
+.topnav nav a.icon {
+  float: right;
   display: block;
-  color: #03261C;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+}
+.topnav.responsive nav,
+.topnav.responsive nav a {
+display: block;
+
+}
+
+.topnav a {
+float: left;
+display: block;
+color: #03261C;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #03261C;
-  color: black;
+background-color: #03261C;
+color: black;
 }
 
 .topnav a.active {
-  background-color: #D9D974;
-  color: white;
+background-color: #D9D974;
+color: white;
 }
 
 .topnav .icon {
-  display: none;
+display: none;
 }
 
 
@@ -124,8 +136,8 @@ Secondary Color (Dark Green): #03261C;
 
 /* The hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/images/landscape.jpg");
-  height: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/images/rainforest.jpg");
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -398,55 +410,6 @@ svg{
   }
 
 
-
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-
-    .view {
-        width: 400px;
-    }
-  }
-
-@media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .view {
-        width: 400px;
-    }
-  }
-
-@media only screen and (min-width: 640px) {
-
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
-
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
-
-.main-container{
-    margin: 0 auto;
-    padding:0;
-}
-
-}
 
 
 @media only screen and (min-width: 1024px)
