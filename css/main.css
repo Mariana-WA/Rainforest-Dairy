@@ -1,5 +1,4 @@
 
-
 body, html {
     width: 100%;
     background-color: #ffffff;
@@ -66,7 +65,7 @@ div {
 
 .main-container {
   max-width: 1200px;
-  margin:auto;
+  margin: 0 auto;
 }
 
 .logo {
@@ -142,7 +141,7 @@ Secondary Color (Dark Green): #03261C;
   clear: both;
   width: 100%;
 }
-
+/*
 .column-l {
   flex-direction: column;
   width: 44%;
@@ -161,7 +160,7 @@ Secondary Color (Dark Green): #03261C;
   width: 100%;
   text-align: center;
 }
-
+*/
 .responsive {
   width: 50%;
   height: auto;
@@ -434,7 +433,6 @@ nav {
     padding:0;
 }
 
-
 }
 
 
@@ -459,19 +457,21 @@ nav {
   flex-direction: row;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    column-gap: 10px;
-    row-gap: 1em;
+.wrapper-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ column-gap: 40px;
+  row-gap: 1em;
 }
 
-.wrapper-2, .wrapper-3 {
-    display: grid;
-    grid-template-columns: repeat (2, 1fr);
-    column-gap: 0px;
-    row-gap: 1em;
+
+.wrapper-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+column-gap: 20px;
+  row-gap: 1em;
 }
+
 
 h2 {
   text-align:unset;}
@@ -479,7 +479,9 @@ h2 {
 
 h3 {
 text-align:unset;}
+
 }
+
 
 @media only screen and (min-width: 1440px) {
 
@@ -500,23 +502,8 @@ text-align:unset;}
     flex-direction: row;
   }
 
-  .wrapper {
-      display: grid;
-      grid-template-columns: repeat (3, 1fr);
-      column-gap: 20px;
-      row-gap: 2em;
-  }
-
-  .wrapper-2, .wrapper-3 {
-      display: grid;
-      grid-template-columns: repeat (2, 1fr);
-      column-gap: 0px;
-      row-gap: 2em;
-  }
-
   h2 {
     text-align:center;}
-
 
 h3 {
   text-align:unset;}
