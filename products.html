@@ -7,11 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)"> <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin> <link href="[fonts.googleapis.com](https://fonts.googleapis.com)/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 <style>
-.vl {
-  border-left: 2px solid black;
-  height: 100px;
-  padding: 20px;
-}
+
 
 .table {
   border:1px solid black;
@@ -21,14 +17,14 @@
 </head>
 
 <body>
-<header>
-  <div class="main-container">
-  <a class="link"href="index.html"><img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo" class="logo"></a>
+  <header>
+  <div class="main-container, wrapper-2">
+  <div><a class="link" href="index.html"><img src="img/images/logo.png" alt="Logo" class="logo"></a></div>
 
   <div class="topnav" id="myTopnav">
     <nav class="navigation">
 
-    <a href="products.html">Product</a>
+    <a href="products.html">Products</a>
     <a href="about.html">About us</a>
     <a href="about.html">Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -37,24 +33,44 @@
     </nav>
   </div>
   </div>
-</header>
 
-<div class="hero-image">
-    <div class="hero-text">
-      <h2>Our products</h2>
-      <p>The rainforest encapsulated in the delicious dairy products.<br>
-Enjoy organic products made directly by the Arenal Lake & Volcano. <br>
-Our cows enjoy a cruelty-free live in the rainforest mountains. </p>
+  </header>
+
+<main class="main-container">
+
+<div>
+    <h2> Our Products. </h2></div>
+
+<div class="wrapper-2">
+  <div></div>
+      <div>
+    <p> The rainforest encapsulated in the delicious dairy products.
+    Enjoy organic products made directly by the Arenal Lake & Volcano.
+    Our cows enjoy a cruelty-free live in the rainforest mountains.
+    <br>
+    At vero eos et accusam et justo duo dolores et ea
+    rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+    ipsum dolor sit amet.<br></p></div>
+    </div>
+
+</main>
+
+<div>
+  <picture>
+    <img src="img/images/about/about_landscape_820x280.jpg" alt="Arenal Volcano" class="full-width">
+  </picture>
 </div>
-  </div>
 
 <main class="main-container">
   <div>
-    <h2>Our promise to you</h2>
+    <h3 style="text-align:center">Our promise to you</h3>
+    <p style="text-align:center">The rainforest encapsulated in the delicious dairy products.
+Enjoy organic products made directly by the Arenal Lake & Volcano.<br>
+Our cows enjoy a cruelty-free live in the rainforest mountains </p>
   </div>
 
   <div class="wrapper-3">
-    <div class>
+    <div>
       <svg version="1.1" id="hand-made" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
       <path id="hand-left" d="M93.1,96.4c-1-1.3-2.3-2.1-4.1-2.3c-0.5-0.2-2.4-0.6-4.2,0.4c0,0-0.1,0-0.1,0.1l0.3-2.4
@@ -88,9 +104,9 @@ Our cows enjoy a cruelty-free live in the rainforest mountains. </p>
       <path class="line-left" d="M87.2,64.9c-0.5,0-1.1-0.3-1.3-0.8L68.3,30.9c-0.4-0.7-0.1-1.6,0.6-2c0.7-0.4,1.6-0.1,2,0.6l17.6,33.2
       	c0.4,0.7,0.1,1.6-0.6,2C87.7,64.8,87.5,64.9,87.2,64.9z"/>
       </svg>
-      <h4> Hand-made organic products </h4>
+      <h4 style="text-align:center"> Hand-made organic products </h4>
 </div>
-    <div class="wrapper-3">
+    <div>
       <svg version="1.1" id="cow_00000031900594653741115300000012477496874641076122_"
       	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
       	 style="enable-background:new 0 0 200 200;" xml:space="preserve">
@@ -130,10 +146,10 @@ Our cows enjoy a cruelty-free live in the rainforest mountains. </p>
       	c2.7-3.4,2.1-8.4-1.3-11.2c-3.4-2.7-8.4-2.1-11.2,1.3c-0.4,0.5-0.8,1.1-1,1.7c-0.3,0.8-1.2,1.1-2,0.8c-0.3-0.2-0.6-0.4-0.8-0.8
       	C99,32.4,96.1,30.5,93,30.5z"/>
       </svg>
-        <h4> Happy cows with fair treatment </h4>
+        <h4 style="text-align:center"> Happy cows with fair treatment </h4>
         </div>
 
-    <div class="wrapper-3">
+    <div>
       <svg version="1.1" id="eco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
       <g class="leaf">
@@ -161,46 +177,31 @@ Our cows enjoy a cruelty-free live in the rainforest mountains. </p>
       		c0.2,0.1,0.5,0.2,0.7,0.2c0.8,0,1.4-0.6,1.5-1.3l3-17.6C179,66,178.4,65.2,177.5,65.1C177.5,65.1,177.5,65.1,177.5,65.1z"/>
       </g>
       </svg>
-        <h4> C02 treatment and eco-friendly solutions </h4>
-</div>
-</div>
-
-
-<div>
-<div class="vl">
-<p>The rainforest encapsulated in the delicious dairy products.<br>
-Enjoy organic products made directly by the Arenal Lake & Volcano. <br>
-Our cows enjoy a cruelty-free live in the rainforest mountains. </p>
+        <h4 style="text-align:center"> C02 treatment and eco-friendly solutions </h4>
 </div>
 </div>
 
 </main>
 
 
+<div class="bg-light">
+  <main class="main-container">
+    <h2>Our products</h2>
+
+    <div class="box-border"> Cheese </div>
+
+<div class="wrapper-2">
 <div>
-    <div class="div-bg">
-    <h1>Our products</h1>
-
-    <div class="tab">
-      <a class="tablinks" onclick="openDairy(event, 'Yogurt')">Cheese</a>
-      <a class="tablinks" onclick="openDairy(event, 'Cheese')">Yogurt</a>
-      <a class="tablinks" onclick="openDairy(event, 'Butter')">Butter</a>
-    </div>
-
-
-  <div id="Yogurt" class="tabcontent">
-  <div class="column">
-      <img src="img/images/Yogurt_S4_340x370.jpg" alt="Yogurt" class="img"></div>
-  </div>
-
-  <div class="column">
-  <h3> Yogurt </h3>
   <p> The health benefits of yogurt are known, it’s a great source of Vitamin D,
       calcium and protein - and it is also delicious! Don’t settle for runny and
       plain yogurt, when you can get organic whole and satisfying products ideal
       for a healthy lifestyle or a snack.</p>
-
-<table>
+  <p> The health benefits of yogurt are known, it’s a great source of Vitamin D,
+      calcium and protein - and it is also delicious! Don’t settle for runny and
+      plain yogurt, when you can get organic whole and satisfying products ideal
+      for a healthy lifestyle or a snack.</p>
+</div>
+<div><table>
   <tr>
     <th>Nutritional value</th>
     <th>Pro 100 g</th>
@@ -223,62 +224,100 @@ Our cows enjoy a cruelty-free live in the rainforest mountains. </p>
   </tr>
 </table>
 </div>
-
-&nbsp;
-&nbsp;
-
+</div>
 <div>
-  <a class="button" href="default.asp" target="_blank">YO quiero YOgurt</a>
-      </div>
+  <img src="img/images/cheese-table.jpg" alt="Cheese table" class="full-width">
+</div>
 
-      </div>
+<div class="box-border"> Yogurt </div>
 
-      <div id="Cheese" class="tabcontent">
-      <div class="column">
-          <img src="img/images/about/cheese_products_200X197.jpg" alt="Cheese" class="img">
-      </div>
+<div class="wrapper-2">
+<div>
+<p> The health benefits of yogurt are known, it’s a great source of Vitamin D,
+  calcium and protein - and it is also delicious! Don’t settle for runny and
+  plain yogurt, when you can get organic whole and satisfying products ideal
+  for a healthy lifestyle or a snack.</p>
+<p> The health benefits of yogurt are known, it’s a great source of Vitamin D,
+  calcium and protein - and it is also delicious! Don’t settle for runny and
+  plain yogurt, when you can get organic whole and satisfying products ideal
+  for a healthy lifestyle or a snack.</p>
+</div>
+<div><table>
+<tr>
+<th>Nutritional value</th>
+<th>Pro 100 g</th>
+<th>%</th>
+</tr>
+<tr>
+<td>Energy</td>
+<td>1000kJ/100kcal</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Fat</td>
+<td>1000kJ/100kcal</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Protein</td>
+<td>1000kJ/100kcal</td>
+<td>10%</td>
+</tr>
+</table>
+</div>
+</div>
+<div>
+<img src="img/images/yogurt-table.jpg" alt="Yogurt table" class="full-width">
+</div>
 
-      <div class="column">
-      <h3> Cheese </h3>
-      <p> We have mastered the making of cheese in the last 5 years, we can
-        proudly say that our cheeses have the perfect melting point for pizza,
-        the ideal consistency for cheeseboard and are the highlight of every
-        typical breakfast.</p>
+<div class="box-border"> Butter </div>
 
-      <table>
-      <tr>
-        <th>Nutritional value</th>
-        <th>Pro 100 g</th>
-        <th>%</th>
-      </tr>
-      <tr>
-        <td>Energy</td>
-        <td>1000kJ/100kcal</td>
-        <td>10%</td>
-      </tr>
-      <tr>
-        <td>Fat</td>
-        <td>1000kJ/100kcal</td>
-        <td>10%</td>
-      </tr>
-      <tr>
-        <td>Protein</td>
-        <td>1000kJ/100kcal</td>
-        <td>10%</td>
-      </tr>
-      </table>
-          </div>
-      &nbsp;
+<div class="wrapper-2">
+<div>
+<p> The health benefits of yogurt are known, it’s a great source of Vitamin D,
+  calcium and protein - and it is also delicious! Don’t settle for runny and
+  plain yogurt, when you can get organic whole and satisfying products ideal
+  for a healthy lifestyle or a snack.</p>
+<p> The health benefits of yogurt are known, it’s a great source of Vitamin D,
+  calcium and protein - and it is also delicious! Don’t settle for runny and
+  plain yogurt, when you can get organic whole and satisfying products ideal
+  for a healthy lifestyle or a snack.</p>
+</div>
+<div><table>
+<tr>
+<th>Nutritional value</th>
+<th>Pro 100 g</th>
+<th>%</th>
+</tr>
+<tr>
+<td>Energy</td>
+<td>1000kJ/100kcal</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Fat</td>
+<td>1000kJ/100kcal</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Protein</td>
+<td>1000kJ/100kcal</td>
+<td>10%</td>
+</tr>
+</table>
+</div>
+</div>
+<div>
+<img src="img/images/butter-table.jpg" alt="Butter table" class="full-width">
+</div>
 
-      <div>
-    <a class="button" href="default.asp" target="_blank">Say Cheese</a>
-          </div>
-      </div>
-      </div>
+
+</div>
 
 
 
 
+</main>
   &nbsp;
   <footer class="BGSection">
   <div class="center">
