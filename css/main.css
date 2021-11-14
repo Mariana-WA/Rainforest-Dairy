@@ -33,7 +33,7 @@ header {
 
 main {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 li {
@@ -431,7 +431,7 @@ svg{
 {
 
 .main-container{
-    margin: 0 auto;
+    margin: 100px auto;
     max-width: 1200px;
     padding:0;
 }
@@ -480,7 +480,7 @@ h4 {
 @media only screen and (min-width: 1440px) {
 
   .main-container{
-      margin: 0 auto;
+      margin: 100px auto;
       max-width: 1200px;
       padding:0;
   }
